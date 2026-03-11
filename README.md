@@ -1,4 +1,5 @@
-
+Run 
+go run
 Saga Checkout Microservice
 README
 Overview
@@ -36,13 +37,10 @@ Why this design
 Simple and easy to extend with new steps
 
 Keeps business flow explicit
-
 Demonstrates the core Saga idea without external brokers or distributed services
-
 Run
 go run .
 Example behavior
-
 Success path: payment captured → inventory reserved → shipping created
 
 Failure path: if shipping fails, inventory and payment are compensated in reverse order
